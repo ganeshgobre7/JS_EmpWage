@@ -1,4 +1,4 @@
-let isAbsent=0;
+let isAbsent = 0;
 let empCheck = Math.floor(Math.random() * 2);
 if (empCheck == isAbsent) {
     console.log("Employee is PRESENT");
@@ -27,5 +27,19 @@ switch (Check) {
     default:
         empHrs = 0;
 }
-let empWage=empHrs*wagePerHour;
-console.log("Employee Wage is :",empWage);
+let empWage = empHrs * wagePerHour;
+console.log("Employee Wage is :", empWage);
+
+function getWorkingHours(Check) {
+    switch (Checks) {
+        case partTime:
+            return partTimeHours;
+        case fullTime:
+            return fullTimeHours;
+        default:
+            return 0;
+    }    
+}
+let Checks=Math.floor(Math.random()*3);
+let empHours=getWorkingHours(Checks);
+console.log("Employee Hours is :",empHrs);
