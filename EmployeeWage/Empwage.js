@@ -29,7 +29,7 @@ switch (Check) {
 }
 let empWage = empHrs * wagePerHour;
 console.log("Employee Wage is :", empWage);
-
+//UC-3
 function getWorkingHours(Check) {
     switch (Checks) {
         case partTime:
@@ -43,3 +43,14 @@ function getWorkingHours(Check) {
 let Checks=Math.floor(Math.random()*3);
 let empHours=getWorkingHours(Checks);
 console.log("Employee Hours is :",empHrs);
+
+//UC-4
+
+const numOfWorkingDays=20;
+let Hours=0;
+for(let day=0; day< numOfWorkingDays;day++){
+    let Echeck=Math.floor(Math.random()*3);
+    Hours+=getWorkingHours(Echeck);
+}
+let EmpWage=Hours*wagePerHour;
+console.log("Total Hours :"+EmpWage);
