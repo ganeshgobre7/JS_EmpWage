@@ -7,4 +7,4 @@ else
     {
         console.log("Employee is ABSENT");
     }
-    console.log(empCheck);
+    
